@@ -1,0 +1,5 @@
+@import "tailwindcss";
+.div{
+    background-color: rgb(252, 112, 61);
+    color: rgb(245, 189, 67);
+}
