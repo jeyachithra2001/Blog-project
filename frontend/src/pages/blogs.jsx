@@ -24,6 +24,8 @@ function Blogs() {
                 console.log("Error fetching data")
             })
         }
+        
+        fetchBlogs()
 
         auth.onAuthStateChanged(function (user) {
             if (user) {
