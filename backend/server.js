@@ -3,13 +3,15 @@ const cors = require("cors")
 const mongoose = require("mongoose")
 const bodyParser = require("body-parser")
 const Blog = require("./src/models/blogSchema")
+const dotenv = require("dotenv");
+const PORT = process.env.PORT || 5000
 
+dotenv.config()
 const app = express()
-
-app.use(cors())
+app.use(cors({origin:[process.env.CLIENT_URL,"http://localhost:5173"]}))
 app.use(bodyParser.json())
 
-mongoose.connect("mongodb://127.0.0.1:27017/blogDB")
+mongoose.connect(process.env.MONGODB_URI)
     .then(() => console.log("Database Connected"))
     .catch((err) => console.log(err.message))
 
@@ -55,6 +57,6 @@ app.post("/api/blogs", async (req, res) => {
     }
 })
 
-app.listen(5000, () => {
+app.listen(PORT, () => {
     console.log("Server running on port")
 })
