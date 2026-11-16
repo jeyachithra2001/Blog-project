@@ -9,5 +9,3 @@ function Contact(){
     )
 }
 export default Contact
-
-//http://localhost:5173/

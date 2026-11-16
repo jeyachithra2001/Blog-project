@@ -23,7 +23,7 @@ function Home() {
                     <h2 className='text-4xl md:text-7xl font-bold text-orange-400 py-2'>Jacky Thomas</h2>
                     <img src={BlogProfileImage} className='w-60 block sm:hidden' alt="Blog Profile Image" />
                     <p className='py-2'>I can create stunning website for your company, Do check my works. I won't disappoint you. Try me for 7 Days before you decide anything.</p>
-                    <button className='button-style mt-2'>Hire Me</button>
+                    <button className="bg-orange-400 text-white py-2 px-4 rounded hover:bg-orange-600 transition duration-200 ease-in-out">Hire Me</button>
                 </div>
                 <div className='justify-center hidden sm:block'>
                     <img src={BlogProfileImage} className='w-60 md:w-96 ' alt="Blog Profile Image" />
@@ -59,7 +59,7 @@ function Home() {
                     <h2 className='text-3xl sm:text-7xl font-bold'>My Awesome</h2>
                     <h2 className='text-3xl sm:text-7xl font-bold text-orange-400'>Services</h2>
                     <p className='my-2'>I have attahed my Resume here for your Reference</p>
-                    <button className='button-style mt-2'>Download CV</button>
+                    <button className="bg-orange-400 text-white py-2 px-4 rounded hover:bg-orange-600 transition duration-200 ease-in-out">Download CV</button>
 
                 </div>
 
@@ -92,7 +92,7 @@ function Home() {
                     <h2 className='text-4xl md:text-7xl font-bold text-orange-400 py-2'>Blogs about tech</h2>
 
                     <p className='py-2'>You can know better about me by reading my blogs here. I share my expertise here.</p>
-                    <button className='button-style mt-2' onClick={() => navigate("/blogs")}>Read My Blogs</button>
+                    <button className="bg-orange-400 text-white py-2 px-4 rounded hover:bg-orange-600 transition duration-200 ease-in-out" onClick={() => navigate("/blogs")}>Read My Blogs</button>
                 </div>
 
 

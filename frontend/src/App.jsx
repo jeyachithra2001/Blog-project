@@ -4,6 +4,8 @@ import Home from './pages/home'
 import Blogs from './pages/blogs'
 import Login from './pages/login'
 import Signup from './pages/signup'
+import About from './pages/About'
+import Contact from "./pages/contact"
 function App() {
 
   return (
@@ -16,10 +18,11 @@ function App() {
           <Route path="/blogs" element={<Blogs />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/signup" element={<Signup />}></Route>
-        </Routes>
-
-      </BrowserRouter>
-    </div>
+          <Route path='/about' element={<About />}></Route>
+          <Route path='/contact' element={<Contact />}></Route>
+      </Routes>
+    </BrowserRouter>
+    </div >
   );
 }
 
